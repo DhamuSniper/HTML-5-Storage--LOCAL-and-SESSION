@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <!-- form container contains both login and sign-up form -->
+    <div class="form-container">
+        <form id=login-form>
+            <h1>Login-form</h1>
+            <label>Email:
+            <input id="loginUsername" type="email" placeholder="required"></label>
+            <label>Password:
+            <input id="loginPassword" type="password" placeholder="required"></label>
+            <button type="submit" onclick="logIn()">Login</button>
+            <a href="#signup-form" id="openSignup">Not a Member? Sign Up</a>
+        </form>
+        <form id="signup-form" >
+            <h1>Sign-up Form</h1>
+            <label>Email:
+            <input id="signupUsername" type="email" placeholder="required"></label>
+            <label>Password:
+            <input id="signupPassword" type="password" placeholder="required"></label>
+            <button type="submit" onclick="signUp()">Sign Up</button>
+            <a id="openLogin" href="#login-form">Already a member? Log in</a>
+        </form>
+    </div>
+    <hr>
+    <!-- This container provide you the access to clear(clean) the local storage by using Localstorage.clear() method -->
+    <div class="clear-container">
+        <h4>This button will clear all the LOCAL STORAGE DATA: CAUTION!</h4>
+        <button type="submit" onclick="clearIt()">Clear</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
